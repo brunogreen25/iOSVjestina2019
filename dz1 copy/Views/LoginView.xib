@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="dz1" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="ne3-KU-PUP" id="ZM8-56-Vv1"/>
+                <outlet property="passwordTF" destination="gbY-Js-vpY" id="Mu0-Tw-sAY"/>
+                <outlet property="titleLabel" destination="EDj-mJ-zGR" id="4hM-nm-DaT"/>
+                <outlet property="usernameTF" destination="tAO-u7-dVm" id="kvI-WC-S6T"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Wbt-Xe-dE7"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tAO-u7-dVm">
+                    <rect key="frame" x="100" y="252" width="144.5" height="30"/>
+                    <color key="backgroundColor" red="0.82885456085205078" green="0.92480587959289551" blue="0.95623010396957397" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbY-Js-vpY">
+                    <rect key="frame" x="100" y="302" width="144.5" height="30"/>
+                    <color key="backgroundColor" red="0.79099130630493164" green="0.90893954038619995" blue="0.94926291704177856" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Log in to play QUIZ GAME!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDj-mJ-zGR">
+                    <rect key="frame" x="10" y="146" width="344.5" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="355" id="xdb-yD-lzR"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ne3-KU-PUP">
+                    <rect key="frame" x="100" y="352" width="144.5" height="47"/>
+                    <color key="backgroundColor" red="0.89991611242294312" green="0.94075649976730347" blue="0.97145837545394897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="LOG IN">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonLoginClicked:" destination="-1" eventType="touchUpInside" id="QNt-xJ-xcI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gbY-Js-vpY" secondAttribute="trailing" constant="100" id="6FM-GG-mIW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="tAO-u7-dVm" secondAttribute="trailing" constant="100" id="7hg-L8-jOx"/>
+                <constraint firstItem="EDj-mJ-zGR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="AIn-Cv-Z0m"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="ne3-KU-PUP" secondAttribute="bottom" constant="268" id="Dm3-VA-ZeJ"/>
+                <constraint firstItem="tAO-u7-dVm" firstAttribute="top" secondItem="EDj-mJ-zGR" secondAttribute="bottom" constant="70" id="GK8-y3-o0G"/>
+                <constraint firstItem="gbY-Js-vpY" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="100" id="HpW-jW-yFd"/>
+                <constraint firstItem="tAO-u7-dVm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="100" id="ICh-fE-u6r"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ne3-KU-PUP" secondAttribute="trailing" constant="100" id="IXJ-NO-LVe"/>
+                <constraint firstItem="gbY-Js-vpY" firstAttribute="top" secondItem="tAO-u7-dVm" secondAttribute="bottom" constant="20" id="O4m-hs-wmc"/>
+                <constraint firstItem="EDj-mJ-zGR" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="10" id="XLy-jr-Shj"/>
+                <constraint firstItem="ne3-KU-PUP" firstAttribute="top" secondItem="gbY-Js-vpY" secondAttribute="bottom" constant="20" id="b5p-yB-wp6"/>
+                <constraint firstItem="gbY-Js-vpY" firstAttribute="top" secondItem="tAO-u7-dVm" secondAttribute="bottom" constant="20" id="bCy-ye-e5m"/>
+                <constraint firstItem="ne3-KU-PUP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="100" id="dTt-1Z-FPL"/>
+                <constraint firstItem="EDj-mJ-zGR" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="126" id="exT-FL-JRJ"/>
+                <constraint firstItem="ne3-KU-PUP" firstAttribute="top" secondItem="gbY-Js-vpY" secondAttribute="bottom" constant="20" id="f9p-NA-Sf2"/>
+                <constraint firstItem="EDj-mJ-zGR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="l1q-4e-KTk"/>
+                <constraint firstItem="tAO-u7-dVm" firstAttribute="top" secondItem="EDj-mJ-zGR" secondAttribute="bottom" constant="70" id="zIz-ej-Evc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="95.200000000000003" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>
